@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>Melt Water</title>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    <h1>Портфель (Тинькофф)</h1>
+    <h4>Брокерский счет</h4>
+    <div class="table-responsive">
+      <table class="table table-sm table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Тикер</th>
+            <th scope="col">Кол-во</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col">Стоимость разница</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="active in actives">
+            <td>{{ active.text }}</td>
+            <td>{{ active.ticker }}</td>
+            <td>{{ active.qty }}</td>
+            <td>${{ active.price }}</td>
+            <td>${{ active.qty*active.price }}</td>
+            <td>${{ active.pricenow }}</td>
+            <td>${{ active.qty*active.pricenow }}</td>
+            <td>${{ active.qty*(active.pricenow-active.price) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h4>ИИС</h4>
+    <div class="table-responsive">
+      <table class="table table-sm table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Тикер</th>
+            <th scope="col">Кол-во</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Стоимость</th>
+            <th scope="col">Стоимость разница</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Exxon mobile</td>
+            <td>XOM</td>
+            <td>2</td>
+            <td>$109.05</td>
+            <td>$218.10</td>
+            <td>$105</td>
+            <td>$210</td>
+            <td>-$8.10</td>
+          </tr>
+          <tr>
+            <td>Яндекс</td>
+            <td>YNDX</td>
+            <td>4</td>
+            <td>210р.</td>
+            <td>840р.</td>
+            <td>200р.</td>
+            <td>800р.</td>
+            <td>40р.</td>
+          </tr>
+        <tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

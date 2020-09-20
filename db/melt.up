@@ -1,0 +1,2 @@
+sudo cp /home/shaman/src/melt/src/db/melt.sql /var/lib/postgresql/melt.sql
+sudo su - postgres -c 'psql melt < /var/lib/postgresql/melt.sql'

@@ -1,0 +1,43 @@
+<select id="fs_sec" style="width: 100%; visibility: visible;" class="screener-combo-text-h" onchange="ScreenerSelectOnChange(this)" data-filter="sec" data-url="v=111" data-url-selected="v=111&amp;f=sec_selected_filter" data-selected="consumercyclical">
+   <option value="">Any</option>
+   <option value="basicmaterials">Basic Materials</option>
+   <option value="communicationservices">Communication Services</option>
+   <option value="consumercyclical">Consumer Cyclical</option>
+   <option value="consumerdefensive">Consumer Defensive</option>
+   <option value="energy">Energy</option>
+   <option value="financial">Financial</option>
+   <option value="healthcare">Healthcare</option>
+   <option value="industrials">Industrials</option>
+   <option value="realestate">Real Estate</option>
+   <option value="technology">Technology</option>
+   <option value="utilities">Utilities</option>
+   <option value="modal">Custom (Elite only)</option>
+</select>
+
+---
+Consumer Cyclical
+<option value="apparelretail">Apparel Retail</option>
+<option value="apparelmanufacturing">Apparel Manufacturing</option>
+<option value="automanufacturers">Auto Manufacturers</option>
+<option value="autoparts">Auto Parts</option>
+<option value="autotruckdealerships">Auto &amp; Truck Dealerships</option>
+<option value="departmentstores">Department Stores</option>
+<option value="footwearaccessories">Footwear &amp; Accessories</option>
+<option value="furnishingsfixturesappliances">Furnishings, Fixtures &amp; Appliances</option>
+<option value="gambling">Gambling</option>
+<option value="homeimprovementretail">Home Improvement Retail</option>
+<option value="internetretail">Internet Retail</option>
+<option value="leisure">Leisure</option>
+<option value="lodging">Lodging</option>
+<option value="luxurygoods">Luxury Goods</option>
+<option value="packagingcontainers">Packaging &amp; Containers</option>
+<option value="personalservices">Personal Services</option>
+<option value="recreationalvehicles">Recreational Vehicles</option>
+<option value="residentialconstruction">Residential Construction</option>
+<option value="resortscasinos">Resorts &amp; Casinos</option>
+<option value="restaurants">Restaurants</option>
+<option value="specialtyretail">Specialty Retail</option>
+<option value="textilemanufacturing">Textile Manufacturing</option>
+<option value="travelservices">Travel Services</option>
+<option value="modal">Custom (Elite only)</option>
+</select>
